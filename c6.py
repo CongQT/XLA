@@ -52,6 +52,5 @@ def lzw_compress(image):
     for code in compressed_data:
         flat_compressed_data.extend([ord(char) for char in code])
 
-    # Đặt giá trị pixel của ảnh đã nén
     compressed_image.putdata(flat_compressed_data)
     return compressed_image
